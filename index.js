@@ -25,7 +25,7 @@ const scraping = async () => {
     if (grade.length == 5) {
       const name_subject = grade[2];
       const grade_subject = grade[4];
-      if (grade_subject != "รอคณะอนุมัติเกรด หรือคุณไม่ได้ประเมินการสอน") break;
+      if (grade_subject == "รอคณะอนุมัติเกรด หรือคุณไม่ได้ประเมินการสอน") break;
       message += `${name_subject} คุณได้เกรด ${grade_subject} \n`;
     } else {
       const average_grade = grade[1];

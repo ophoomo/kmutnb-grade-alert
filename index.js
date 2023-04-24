@@ -6,7 +6,7 @@ const querystring = require("querystring");
 
 const main = async () => {
   const rule = new schedule.RecurrenceRule();
-  rule.hour = 12;
+  rule.hour = 6;
   rule.minute = 0;
   rule.tz = "Asia/Bangkok";
 
